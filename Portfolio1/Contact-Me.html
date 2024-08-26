@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <title>Contact Me</title>
+ <link rel="icon" href="images/225281.png" type="image/x-icon"/>
+        <link rel = "stylesheet" type="text/css" href="css/style.css"/> 
+        <link rel="stylesheet" type="text/css"
+href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"/>
+<script defer src="js/basic.js"></script>
+<script src="https://kit.fontawesome.com/87e6a084cf.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<header id="main-header">
+  <h1><strong>Duwa Khan</strong></h1>
+  <p>University Student</p>
+</header>
+
+<div class="topnav">
+  <nav>
+  
+  <a href="Home.html">Home</a>
+  <a href="Projects.html">Projects</a>
+  <a href="Contact-Me.html">Contact Me</a>
+  <a href="https://github.com/dduwa"><i class="fab fa-github"></i></a>
+  <a href="https://www.linkedin.com/in/duwa-khan-7b038a231/"><i class="fa-brands fa-linkedin"></i></a>
+  <a href="https://twitter.com/?lang=en"><i class="fa-brands fa-twitter"></i></a>
+
+</nav>
+</div>
+
+<div class="Contact-Details">
+  <h4><strong>Contact Details </strong> </h4>
+  <p>Duwa Khan <i class="fa-solid fa-at" ></i> 210044641@aston.ac.uk</p>
+  <p><strong>SUN:</strong> 210044641</p>
+</div>
+
+
+<main>
+       
+  <form  id="enquiry">
+      <h2> <strong>Project Enquires</strong> </h2>
+  <input type="text" name="name" placeholder="First Name" />
+  <input type="email" name="email" placeholder="Email" />
+  <input type="email" name="confirmemail" placeholder="Confirm Email" />
+  <input type="number" name="phonenumber" placeholder = "Phone Number" />
+ 
+  <br>
+
+   <label> Enquiry Date:
+       <input type="date" name="enquiryapptdate"  id = "date" >
+       <span class="validity"></span>
+   </label>
+   <p id="currentDate"></p>
+  <br>
+  <label>Select Enquiry Duration:
+  <select name = "dropBox">
+    <option>30 mins</option>
+    <option>45 mins</option>
+    <option>1 hr</option>
+    <option>1 hr 30 mins</option>
+    <option>2 hrs</option>
+    </select>
+  </label>
+  
+  <br>
+  <label> What is best contact method to reach you?: </label>
+    <label><input type="radio" name="rdo" value="phone"/> Phone </label>
+    <label><input type="radio" name="rdo" value="email" /> Email </label> 
+
+  
+
+  <p>Enquiry Details:</p> 
+    <textarea name="details"  rows= "4" cols="40"> Special notes, details and requirements</textarea>
+  <br>
+    
+  <input onclick="checkDate(), EnquiryConfirmation() " type= "submit" value ="Submit" id="submitBtn"/>
+
+</form>
+</main>
+<footer>
+  <p><strong>Duwa Khan <i class="fa-solid fa-at" ></i> 210044641@aston.ac.uk</strong></p>
+</footer>
+</body>
+</html>
